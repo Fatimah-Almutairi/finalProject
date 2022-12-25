@@ -1,0 +1,80 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+
+
+model User {
+  id String @id @default(uuid())
+  username String 
+  email String @unique
+  password String
+  role Role  
+  consultant Consultant?
+  investor Investor?
+}
+
+enum Role {
+  Investor
+  Consultant
+}
+
+model Investor {
+  user_id String @id @default(uuid())
+  user User @relation(fields: [user_id], references: [id])
+  session Session[]
+
+ coment Comments[]
+
+  @@index([user_id])
+}
+
+model Comments{
+  id String @id @default(uuid())
+  comments String
+  consultantID String
+  InvestorId String
+  consultant Consultant @relation(fields:[consultantID],references: [user_id]) 
+  investor Investor @relation(fields:[InvestorId],references: [user_id]) 
+
+  @@index([consultantID])
+  @@index([InvestorId])
+}
+
+
+
+model Consultant {
+  user_id String @id
+  user User @relation(fields: [user_id], references: [id])
+  phone String @unique
+  AboutMe String
+  certificate String
+  filed String
+  session Session[]
+  coment Comments[]
+
+  @@index([user_id])
+}
+
+
+
+model Session {
+  id String @id @default(uuid()) 
+  duration String
+  price String
+  consultant_id String
+  investor_id String
+
+  consultant Consultant @relation(fields: [consultant_id],references: [user_id]) 
+  investor Investor @relation(fields: [investor_id],references: [user_id])  
+ 
+
+  @@index([investor_id])
+  @@index([consultant_id])
+}

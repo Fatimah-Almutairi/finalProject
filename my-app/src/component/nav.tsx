@@ -42,7 +42,8 @@ function Nav() {
     <MenuList dir="rtl">
       {localStorage.getItem('token')? (
         <>
-      <MenuItem>بياناتي</MenuItem>
+        <Link to ="/editProfile">
+      <MenuItem>بياناتي</MenuItem></Link>
     <MenuDivider />
       <MenuItem onClick={logout} >تسجيل الخروج</MenuItem>
       </>

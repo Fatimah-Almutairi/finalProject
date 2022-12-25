@@ -59,30 +59,6 @@ export const  ConProfile =( e: any) => {
 
 
 
-  // localStorage.setItem('token', data.token);
-
-//   const fetchSession = async () => {
-//     try{
-    
-//     const request = await fetch (`/api/v1/shoraa/${consultant_id}`, {
-//       method : 'GET',
-//       headers: {
-//         Authorization: 'Bearer ' + localStorage.getItem('token'),
-//       },
-//     });
-
-//     const data = await request.json();
-//     setSession(data);
-//     console.log(data)
-//   }catch(error){
-//     console.log(error)
-//   }
-// }
-// useEffect(() => {
-//   fetchSession();
-// }, [])
-
-
   return (
     <Center p={6}>
     <Box
@@ -92,10 +68,7 @@ export const  ConProfile =( e: any) => {
       rounded={'md'}
       p={30}
       >
-        {/* {info.AboutMe} */}
-            {/* {info.map((item :any) => (
-              <Box>{item.AboutMe}
-              {item.user.username} */}
+      
 <Flex pt={9} gap ={3}>
       <Avatar
         ml={'5'}
@@ -137,19 +110,7 @@ export const  ConProfile =( e: any) => {
      </Tabs>
 
      <Stack mt={8} direction={'row'} spacing={4} align={'center'} justify={'center'}>
-        {/* <Button
-          flex={.25}
-          fontSize={'sm'}
-          cursor='pointer'
-          rounded={'full'}
-          bg={'#F2DFA7'}
-          color={'#1F5373'}
-       
-          _focus={{
-            bg: '#F2DFA7',
-          }}>
-          رفض الجلسة
-        </Button> */}
+  
         <Link href='https://wa.me/0550570955'>
         <Button
           flex={.25}
@@ -166,69 +127,9 @@ export const  ConProfile =( e: any) => {
         </Button>
         </Link>
       </Stack>
-              {/* </Box> */}
-            {/* ))} */}
-   
+
   
     </Box>
   </Center>
 );
 }
-//       <Center p={6} pt={20}>
-//         <Box
-//           maxW={'600px'}
-//           w={'full'}
-//           boxShadow={'2xl'}
-//           rounded={'md'}
-//           p={30}
-//           >
-
-//          <Tabs variant='enclosed' dir="rtl" mt={'10'} size='lg'>
-//          <TabList>
-//           <Tab>الجلسات</Tab>
-//          </TabList>
-//          <TabPanels>
-//             <TabPanel>
-//               {session.map ( (ele:any) => (
-//                 <Box>
-//               <Text fontSize={'2xl'} my={10}>  {ele.investor_id}  </Text>
-           
-//               <Text mt={2} fontSize={'lg'}>ملاحظة :  لدي استشارة حول وضع خطة إدخار لراتب موظف  
-// قطاع خاص. </Text></Box>
-//               ))}
-
-//             </TabPanel>
-//          </TabPanels>
-//          </Tabs>
-
-//          <Stack mt={8} direction={'row'} spacing={4} align={'center'} justify={'center'} p={12}>
-//             <Button 
-//               flex={.25}
-//               fontSize={'sm'}
-//               cursor='pointer'
-//               rounded={'full'}
-//               bg={'#F2DFA7'}
-//               color={'#1F5373'}
-         
-//               _focus={{
-//                 bg: '#F2DFA7',
-//               }}>
-//               رفض الجلسة
-//             </Button>
-//             <Button
-//               flex={.25}
-//               fontSize={'sm'}
-//               cursor='pointer'
-//               rounded={'full'}
-//               bg={'#F2DFA7'}
-//               color={'#1F5373'}
-//               _focus={{
-//                 bg: '#F2DFA7',
-//               }}>
-//               قبول الجلسة
-//             </Button>
-//           </Stack>
-//         </Box>
-//       </Center>
-//   );
-// }

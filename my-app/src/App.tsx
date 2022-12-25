@@ -18,6 +18,7 @@ import Payment2 from "./component/Payment2"
 import {RegisterConPages} from "./component/conRegister"
 import AboutUs from "./component/AboutUs"
 import Whatsapp from "./component/Whatsapp"
+import ProfileEdit from "./component/editProfile"
 // import ProtectCon from "./component/ProtectCon"
 
 
@@ -40,6 +41,7 @@ export const App = () => (
         <Route element={<ProtectedRoute />}>
         <Route path='/info/:user_id' element={<Info />}></Route>
         <Route path='/rating' element={<Rating />}></Route>
+        <Route path='/editProfile' element={<ProfileEdit />}></Route>
        
         </Route>
 {/* 

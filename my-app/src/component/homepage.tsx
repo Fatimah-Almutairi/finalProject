@@ -170,7 +170,7 @@ export const  HomePage =() => {
           color={useColorModeValue('gray.700', 'gray.400')}
           py={3}
           px={3}>
-          خبرة مصرفية ومالية لأكثر من 20 عاماً خبير في
+          خبرة مصرفية ومالية لأكثر من 5 أعوام ، خبير في
            التحليل والتقييم الائتماني حاصل على الماجستير علوم المالية 
         </Text>
         <Stack mt={8} direction={'row'} spacing={4}>

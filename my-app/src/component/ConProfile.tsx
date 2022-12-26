@@ -9,9 +9,7 @@ import {
   TabPanels,
   TabPanel,
   Button,
-  
   Flex,
-  Image,
   Avatar,
   Link
   } from '@chakra-ui/react';

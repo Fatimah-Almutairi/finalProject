@@ -9,7 +9,7 @@ import {
   TabPanels,
   TabPanel,
   Button,
-  Badge,
+  
   Flex,
   Image,
   Avatar,

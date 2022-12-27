@@ -19,7 +19,7 @@ import {RegisterConPages} from "./component/conRegister"
 import AboutUs from "./component/AboutUs"
 import Whatsapp from "./component/Whatsapp"
 import ProfileEdit from "./component/editProfile"
-// import ProtectCon from "./component/ProtectCon"
+import ProtectCon from "./component/ProtectCon"
 
 
 
@@ -44,10 +44,10 @@ export const App = () => (
         <Route path='/editProfile' element={<ProfileEdit />}></Route>
        
         </Route>
-{/* 
+
 
         <Route element={<ProtectCon />}>
-        </Route> */}
+        </Route>
 
 <Route path='/payment' element={<Payment2/>}></Route>
 <Route path='/chat' element={<Whatsapp/>}></Route>

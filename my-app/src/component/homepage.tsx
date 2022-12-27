@@ -74,6 +74,9 @@ export const  HomePage =() => {
         </Heading>
       </Box>
   </Grid>
+
+{/* list Consulants */}
+
       <Heading
       fontWeight={600}
       fontSize={'4xl'}
@@ -248,6 +251,8 @@ export const  HomePage =() => {
   <br/>
   <br/>
 
+{/* contact us  */}
+  
   <Heading
       fontWeight={600}
       fontSize={'4xl'}

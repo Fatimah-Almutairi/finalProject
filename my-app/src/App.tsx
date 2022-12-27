@@ -45,8 +45,8 @@ export const App = () => (
        
         </Route>
 
-
         <Route element={<ProtectCon />}>
+        {/* put here inside the route the page open just for the user login */}
         </Route>
 
 <Route path='/payment' element={<Payment2/>}></Route>

@@ -50,6 +50,7 @@ export const App = () => (
         </Route>
 
 <Route path='/payment' element={<Payment2/>}></Route>
+{/* the chat in not complete... do later */}
 <Route path='/chat' element={<Whatsapp/>}></Route>
 
       

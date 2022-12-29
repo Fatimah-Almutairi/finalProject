@@ -80,7 +80,7 @@ export const getConsultantHandler = async (req: Request, res: Response) => {
   };
 
   
-// Add Commmit for User
+// Add Comment for User
 
 export const addComments = async (req: Request, res: Response) => {
     const newComment = req.body as Comments;
@@ -100,6 +100,7 @@ export const addComments = async (req: Request, res: Response) => {
     }
   };
   
+  // Show the Comments on Consultant Page 
   
   export const getCommentsHandler = async (req: Request, res: Response) => {
     const {id} = req.params as getCommentsSchemaType
@@ -111,6 +112,7 @@ export const addComments = async (req: Request, res: Response) => {
     return res.status(200).json(Comments);
   };
 
+  // Cansel the Session from Consultant
 
   export const deleteSessionHandler = async (req: Request, res: Response) => {
     const user = res.locals.user as IUser;

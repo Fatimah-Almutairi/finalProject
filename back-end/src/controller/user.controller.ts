@@ -61,6 +61,8 @@ export const getConsultantHandler = async (req: Request, res: Response) => {
     return res.status(200).json(consultant);
   };
   
+// Show the Session in Consultant Page
+
   export const getSessionHandler = async (req: Request, res: Response) => {
     const {investor_id} = req.params as getSessionSchemaType
   
@@ -78,7 +80,7 @@ export const getConsultantHandler = async (req: Request, res: Response) => {
   };
 
   
-
+// Add Commmit for User
 
 export const addComments = async (req: Request, res: Response) => {
     const newComment = req.body as Comments;

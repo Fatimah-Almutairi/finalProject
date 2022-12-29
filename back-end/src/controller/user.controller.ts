@@ -5,7 +5,7 @@ import { prisma } from '../config/db';
 import { IUser } from "../middleware/auth";
 import { getCommentsSchemaType, getConsultantSchemaType, getSessionSchemaType ,deleteSessionSchemaType,   } from "../zod_schema/user.schema";
 
-
+// Add Session 
   export const addSession = async (req: Request, res: Response) => {
     const newSession = req.body as Session;
   
@@ -25,7 +25,7 @@ import { getCommentsSchemaType, getConsultantSchemaType, getSessionSchemaType ,d
   };
   
 
-
+// Show All Consultants 
 export const getAllConsultantHandler = async (req: Request, res: Response) => {
     const consultants = await prisma.consultant.findMany(
         {

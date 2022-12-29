@@ -42,7 +42,7 @@ export const getAllConsultantHandler = async (req: Request, res: Response) => {
         //  return res.status(200).json(username);
 }
 
-// Show Informations for Consultant
+// Show Informations for Consultant for user
 
 export const getConsultantHandler = async (req: Request, res: Response) => {
     // const user = res.locals.user as Consultant;
@@ -134,6 +134,7 @@ export const addComments = async (req: Request, res: Response) => {
   };
 
 
+  // Get the Consultant Info
 
   export const getConsultantProfileHandler = async (req: Request, res: Response) => {
     

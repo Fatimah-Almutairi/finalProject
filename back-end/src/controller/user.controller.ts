@@ -42,6 +42,8 @@ export const getAllConsultantHandler = async (req: Request, res: Response) => {
         //  return res.status(200).json(username);
 }
 
+// Show Informations for Consultant
+
 export const getConsultantHandler = async (req: Request, res: Response) => {
     // const user = res.locals.user as Consultant;
     const {user_id} = req.params as getConsultantSchemaType

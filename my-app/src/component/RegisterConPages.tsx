@@ -34,7 +34,7 @@ const submitRegisterCon = async () => {
   try {
     if (password !== password2) {
       toast({
-        // change the message 
+       
         title: `الرجاء التأكد من تطابق كلمة المرور `,  
         status: 'error',
         duration: 3000,

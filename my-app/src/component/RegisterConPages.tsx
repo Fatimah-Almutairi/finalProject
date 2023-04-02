@@ -81,7 +81,7 @@ const submitRegisterCon = async () => {
 };
 
 return (
-  <Flex justifyContent='center' alignItems='center' height='120vh'>
+  <Flex justifyContent='center' alignItems='center' height='2000vh'>
     <VStack spacing='2rem' width='20rem'>
       <Heading textColor={"#1F5373"}>تسجيل جديد  </Heading>
       <h3> أنشئ حسابك هنا</h3>
@@ -156,7 +156,7 @@ return (
               onChange={(e) => setAboutMe(e.target.value)}
               value={AboutMe}
               type='text'
-              height='100px'
+              height='80px'
             />
           </Box>
          

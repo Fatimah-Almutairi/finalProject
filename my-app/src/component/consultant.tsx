@@ -57,6 +57,7 @@ export const  Consultant = () =>  {
                     <Avatar
                     size={'xl'}
                     src='profile.png'
+                    // src='./profile-pic.png'
                     mb={4}
                     pos={'relative'}
                 

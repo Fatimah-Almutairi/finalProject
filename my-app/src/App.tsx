@@ -38,11 +38,12 @@ export const App = () => (
         <Route path='/conprofile' element={<ConProfile />}></Route>
         <Route path='/consultant' element={<Consultant />}></Route>
 
-        <Route element={<ProtectedRoute />}>
         <Route path='/info/:user_id' element={<Info />}></Route>
         <Route path='/rating' element={<Rating />}></Route>
         <Route path='/editProfile' element={<ProfileEdit />}></Route>
-       
+
+        <Route element={<ProtectedRoute />}>
+        {/* put here inside the route the page open just for the user login */}
         </Route>
 
         <Route element={<ProtectCon />}>
